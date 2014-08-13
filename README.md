@@ -1,6 +1,8 @@
 # Shortener
 
-TODO: Write a gem description
+A Ruby library used for manufacturing the flic.kr style base58 shortened URLs.
+
+See this blog post [manufacturing flic.kr style photo URLs](https://www.flickr.com/groups/api/discuss/72157616713786392/)
 
 ## Installation
 
@@ -18,7 +20,23 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Create an instance of a shortener
+
+```ruby
+s = Shortener.new
+``` 
+
+### Encoding
+
+```ruby
+hash = s.encode 100 # => "2J"
+```
+
+### Deconding
+
+```ruby
+num = s.decode "2J" # => 100
+```
 
 ## Contributing
 
