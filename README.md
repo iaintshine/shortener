@@ -8,7 +8,7 @@ See this blog post [manufacturing flic.kr style photo URLs](https://www.flickr.c
 
 Add this line to your application's Gemfile:
 
-    gem 'shortener'
+    gem 'shortener', :git => 'https://github.com/iaintshine/shortener.git'
 
 And then execute:
 
